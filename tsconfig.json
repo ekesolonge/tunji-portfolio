@@ -6,6 +6,12 @@
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
+    // Make indexing stricter
+    "noUncheckedIndexedAccess": true,
+    // No accidental global scripts
+    "moduleDetection": "force",
+    // Enforced 'type-only' imports
+    "verbatimModuleSyntax": true,
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,

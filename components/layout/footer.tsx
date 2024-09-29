@@ -19,23 +19,31 @@ const Footer = () => {
             </Link>
           </h2>
           <nav>
-            <ul className="list-none space-y-4">
+            <ul className="group list-none space-y-4">
               <li>
-                <Link href="#">About</Link>
+                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                  About
+                </Link>
               </li>
               <li>
-                <Link href="#">Resume</Link>
+                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                  Resume
+                </Link>
               </li>
               <li>
-                <Link href="#">Linkedin</Link>
+                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                  Linkedin
+                </Link>
               </li>
               <li>
-                <Link href="#">Behance</Link>
+                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                  Behance
+                </Link>
               </li>
             </ul>
           </nav>
         </section>
-        <section className="flex flex-col-reverse gap-4 pb-6 pt-4 text-xs leading-normal tracking-[0.02em] md:flex-row md:items-center md:justify-between md:pt-6 md:text-base">
+        <section className="flex flex-col-reverse gap-4 border-t border-t-white pb-6 pt-4 text-xs leading-normal tracking-[0.02em] md:flex-row md:items-center md:justify-between md:pt-6 md:text-base">
           <p className="uppercase">© {new Date().getFullYear()} OLATUNJI TAJUDEEN</p>
           <p className="flex items-center gap-[1ch] leading-loose md:leading-normal">
             Till the <mark className="border border-[#242400] bg-[#FFFF0036] px-0.5 text-[#CECEAA] md:px-1">dots connect</mark>{" "}

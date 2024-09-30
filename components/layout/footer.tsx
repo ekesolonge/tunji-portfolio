@@ -8,11 +8,11 @@ const Footer = () => {
     <footer className="bg-black text-white">
       <div className="container space-y-10 pt-8 md:space-y-[4.5rem] md:pt-20">
         <section className="flex flex-col gap-10 md:flex-row md:items-center md:justify-between">
-          <h2 className="max-w-[37.9375rem] text-[2rem] leading-[2.625rem] md:text-7xl md:leading-[5.5rem]">
+          <h2 className="text-[2rem] leading-[2.625rem] md:max-w-[39.9375rem] md:text-7xl md:leading-[5.5rem]">
             Let us discuss your big idea.{" "}
             <Link
-              href="#"
-              className="group flex items-center gap-4 text-white/50 underline transition-all duration-300 ease-in hover:text-white md:no-underline"
+              href="mailto:tajudeenismail61@gmail.com"
+              className="group inline-flex items-center gap-4 text-white/50 underline transition-all duration-300 ease-in hover:text-white md:no-underline"
             >
               Email me{" "}
               <RightArrowIcon className="relative -left-10 hidden text-transparent transition-all duration-300 ease-in group-hover:left-0 group-hover:text-white md:block" />
@@ -21,7 +21,10 @@ const Footer = () => {
           <nav>
             <ul className="group list-none space-y-4">
               <li>
-                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                <Link
+                  href="#"
+                  className="transition-colors duration-300 ease-in sm:hover:!text-white sm:group-hover:text-[#333333]"
+                >
                   About
                 </Link>
               </li>
@@ -29,7 +32,7 @@ const Footer = () => {
                 <Link
                   href="https://read.cv/teejaay"
                   target="_blank"
-                  className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]"
+                  className="transition-colors duration-300 ease-in sm:hover:!text-white sm:group-hover:text-[#333333]"
                 >
                   Resume
                 </Link>
@@ -38,7 +41,7 @@ const Footer = () => {
                 <Link
                   href="https://www.linkedin.com/in/olatunji-tajudeen"
                   target="_blank"
-                  className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]"
+                  className="transition-colors duration-300 ease-in sm:hover:!text-white sm:group-hover:text-[#333333]"
                 >
                   Linkedin
                 </Link>
@@ -47,7 +50,7 @@ const Footer = () => {
                 <Link
                   href="https://www.behance.net/tajudeenismail1"
                   target="_blank"
-                  className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]"
+                  className="transition-colors duration-300 ease-in sm:hover:!text-white sm:group-hover:text-[#333333]"
                 >
                   Behance
                 </Link>

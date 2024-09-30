@@ -25,7 +25,7 @@ const ProjectCard = ({ project }: Props) => {
             {project.name}
           </h3>
         </Link>
-        <p className="whitespace-pre-wrap text-xl leading-normal tracking-wide text-[#4D5153]">{project.description}</p>
+        <p className="text-xl leading-normal tracking-wide text-[#4D5153] md:whitespace-pre-wrap">{project.description}</p>
       </div>
       <div className="flex flex-wrap items-center gap-2">
         {project.tags.map((tag, index) => (

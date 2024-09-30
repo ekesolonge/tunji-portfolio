@@ -64,7 +64,7 @@
   }
 
   html {
-    @apply size-full !scroll-smooth;
+    @apply size-full scroll-smooth scroll-pt-[5.375rem] md:scroll-pt-[4.75rem];
   }
 
   body {

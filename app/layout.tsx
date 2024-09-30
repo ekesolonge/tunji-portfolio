@@ -76,7 +76,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={cabinetGrotesk.variable}>
       <body>
         <Header />
-        {children}
+        <main className="mt-[5.375rem] md:mt-[4.75rem]">{children}</main>
         <Footer />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </body>

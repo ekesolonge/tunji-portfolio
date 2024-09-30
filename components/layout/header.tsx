@@ -26,7 +26,7 @@ const Header = () => {
     <header className="container relative pt-7 md:pt-4">
       <div className="mb-2.5 flex items-center justify-between md:mb-3">
         <Link href="#">
-          <Logo className="size-10" />
+          <Logo className="size-8 md:size-10" />
         </Link>
         <Button
           className="hidden text-xl font-bold uppercase leading-normal md:inline-flex"
@@ -42,7 +42,7 @@ const Header = () => {
       <div className="h-[0.1875rem] bg-black" />
       <div className="h-0.5 bg-white" />
       <div className="h-[0.1875rem] bg-black" />
-      <Navbar isOpen={isOpen} />
+      <Navbar isOpen={isOpen} closeMenu={() => setIsOpen(false)} />
       <MobileNavbar isOpen={isOpen} closeMenu={() => setIsOpen(false)} />
     </header>
   );

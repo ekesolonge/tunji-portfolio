@@ -18,7 +18,7 @@ const MobileNavbar = ({ isOpen, closeMenu }: Props) => {
 
   return (
     <motion.div
-      className="fixed inset-0 mt-[5.375rem] bg-black text-white md:hidden"
+      className="fixed inset-0 mt-[5.375rem] overflow-hidden bg-black text-white md:hidden"
       initial={{ height: 0, opacity: 0 }}
       animate={{ height: isOpen ? "auto" : 0, opacity: isOpen ? 1 : 0 }}
       transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}

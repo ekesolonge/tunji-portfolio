@@ -7,7 +7,6 @@ import MenuIcon from "@/components/icons/menu-icon";
 import Logo from "@/components/logo";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { AnimatePresence } from "framer-motion";
 import MobileNavbar from "./mobile-navbar";
 import Navbar from "./navbar";
 
@@ -66,10 +65,8 @@ const Header = () => {
           <div className={cn("h-0.5 bg-white transition-all duration-400 ease-in", isMobileOpen && "bg-black")} />
           <div className={cn("h-[0.1875rem] bg-black transition-all duration-400 ease-in", isMobileOpen && "bg-white")} />
         </div>
-        <AnimatePresence>
-          <Navbar isOpen={isOpen} closeMenu={() => setIsOpen(false)} />
-          <MobileNavbar isOpen={isMobileOpen} closeMenu={() => setIsMobileOpen(false)} />
-        </AnimatePresence>
+        <Navbar isOpen={isOpen} closeMenu={() => setIsOpen(false)} />
+        <MobileNavbar isOpen={isMobileOpen} closeMenu={() => setIsMobileOpen(false)} />
       </div>
     </header>
   );

@@ -10,6 +10,13 @@ const config: Config = {
       fontFamily: {
         "cabinet-grotesk": ["var(--font-cabinet-grotesk)", ...defaultTheme.fontFamily.sans],
       },
+      screens: {
+        sm: "40rem", // 640px
+        md: "48rem", // 768px
+        lg: "64rem", // 1024px
+        xl: "80rem", // 1280px
+        "2xl": "90rem", // 1440px
+      },
       container: {
         center: true,
         screens: {

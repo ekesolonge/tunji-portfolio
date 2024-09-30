@@ -38,7 +38,8 @@ const Navbar = ({ isOpen, closeMenu }: Props) => {
           </li>
           <li>
             <Link
-              href="#"
+              href="https://read.cv/teejaay"
+              target="_blank"
               onClick={closeMenu}
               className="inline-block w-full border-b border-b-white/30 px-2 pb-4 pt-5 text-[2rem] font-bold"
             >
@@ -47,7 +48,7 @@ const Navbar = ({ isOpen, closeMenu }: Props) => {
           </li>
           <li>
             <Link
-              href="#"
+              href="#projects"
               onClick={closeMenu}
               className="inline-block w-full border-b border-b-white/30 px-2 pb-4 pt-5 text-[2rem] font-bold"
             >
@@ -56,7 +57,8 @@ const Navbar = ({ isOpen, closeMenu }: Props) => {
           </li>
           <li>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/olatunji-tajudeen"
+              target="_blank"
               onClick={closeMenu}
               className="inline-block w-full border-b border-b-white/30 px-2 pb-4 pt-5 text-[2rem] font-bold"
             >
@@ -65,7 +67,8 @@ const Navbar = ({ isOpen, closeMenu }: Props) => {
           </li>
           <li>
             <Link
-              href="#"
+              href="https://www.behance.net/tajudeenismail1"
+              target="_blank"
               onClick={closeMenu}
               className="inline-block w-full border-b border-b-white/30 px-2 pb-4 pt-5 text-[2rem] font-bold"
             >

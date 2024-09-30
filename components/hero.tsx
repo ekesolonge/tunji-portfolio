@@ -21,7 +21,7 @@ const Hero = () => {
           transition={{ ease: "linear", duration: 16, repeat: Infinity }}
           layout
         >
-          <Image src="/cube.png" alt="cube" fill sizes="(max-width: 768px) 14rem, 21rem" priority />
+          <Image src="/images/cube.png" alt="cube" fill sizes="(max-width: 768px) 14rem, 21rem" priority />
         </motion.div>
       </div>
     </section>

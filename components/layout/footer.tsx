@@ -26,17 +26,29 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                <Link
+                  href="https://read.cv/teejaay"
+                  target="_blank"
+                  className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]"
+                >
                   Resume
                 </Link>
               </li>
               <li>
-                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                <Link
+                  href="https://www.linkedin.com/in/olatunji-tajudeen"
+                  target="_blank"
+                  className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]"
+                >
                   Linkedin
                 </Link>
               </li>
               <li>
-                <Link href="#" className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]">
+                <Link
+                  href="https://www.behance.net/tajudeenismail1"
+                  target="_blank"
+                  className="transition-colors duration-300 ease-in hover:!text-white group-hover:text-[#333333]"
+                >
                   Behance
                 </Link>
               </li>
@@ -48,7 +60,7 @@ const Footer = () => {
           <p className="flex items-center gap-[1ch] leading-loose md:leading-normal">
             Till the <mark className="border border-[#242400] bg-[#FFFF0036] px-0.5 text-[#CECEAA] md:px-1">dots connect</mark>{" "}
             and the <mark className="border border-[#242400] bg-[#FFFF0036] px-0.5 text-[#CECEAA] md:px-1">pixels perfect</mark>{" "}
-            <Image src="/pen.png" width={72} height={72} alt="pen" className="size-5" />
+            <Image src="/images/pen.png" width={72} height={72} alt="pen" className="size-5" />
           </p>
         </section>
       </div>

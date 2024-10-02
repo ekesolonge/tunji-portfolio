@@ -1,5 +1,6 @@
 "use client";
 
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useLayoutEffect, useState } from "react";
 
@@ -34,10 +35,13 @@ const Header = () => {
   }, [isMobileOpen]);
 
   return (
-    <header
-      className={cn("pt-7 md:pt-4 fixed w-full bg-white z-50 transition-all duration-400 ease-in", {
-        "bg-black text-white": isMobileOpen,
-      })}
+    <motion.header
+    className={cn("pt-7 md:pt-4 fixed w-full bg-white z-50 transition-all duration-400 ease-in", {
+      "bg-black text-white": isMobileOpen,
+    })}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}
     >
       <div className="container relative">
         <div>
@@ -61,14 +65,32 @@ const Header = () => {
               <MenuIcon isOpen={isMobileOpen} />
             </Button>
           </div>
-          <div className={cn("h-[0.1875rem] bg-black transition-all duration-400 ease-in", isMobileOpen && "bg-white")} />
-          <div className={cn("h-0.5 bg-white transition-all duration-400 ease-in", isMobileOpen && "bg-black")} />
-          <div className={cn("h-[0.1875rem] bg-black transition-all duration-400 ease-in", isMobileOpen && "bg-white")} />
+          <motion.div
+            className={cn("h-[0.1875rem] mx-auto bg-black transition-all duration-400 ease-in", isMobileOpen && "bg-white")}
+            initial={{ width: 0, opacity: 0 }}
+            animate={{ width: "100%", opacity: 1 }}
+            transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}
+            layout
+          />
+          <motion.div
+            className={cn("h-0.5 bg-white transition-all duration-400 ease-in", isMobileOpen && "bg-black")}
+            initial={{ width: 0, opacity: 0 }}
+            animate={{ width: "100%", opacity: 1 }}
+            transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}
+            layout
+          />
+          <motion.div
+            className={cn("h-[0.1875rem] mx-auto bg-black transition-all duration-400 ease-in", isMobileOpen && "bg-white")}
+            initial={{ width: 0, opacity: 0 }}
+            animate={{ width: "100%", opacity: 1 }}
+            transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}
+            layout
+          />
         </div>
         <Navbar isOpen={isOpen} closeMenu={() => setIsOpen(false)} />
         <MobileNavbar isOpen={isMobileOpen} closeMenu={() => setIsMobileOpen(false)} />
       </div>
-    </header>
+    </motion.header>
   );
 };
 

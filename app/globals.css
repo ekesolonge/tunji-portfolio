@@ -68,6 +68,6 @@
   }
 
   body {
-    @apply bg-background text-foreground grid size-full grid-rows-[auto_1fr_auto] font-cabinet-grotesk font-medium *:min-w-0;
+    @apply bg-background text-foreground grid size-full grid-rows-[1fr_auto] font-cabinet-grotesk font-medium *:min-w-0;
   }
 }

@@ -22,7 +22,7 @@ const Footer = () => {
             <ul className="group list-none space-y-4">
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="transition-colors duration-300 ease-in sm:hover:!text-white sm:group-hover:text-[#333333]"
                 >
                   About

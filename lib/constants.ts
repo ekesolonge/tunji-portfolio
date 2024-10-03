@@ -3,6 +3,7 @@ export const siteConfig = {
   title: "Olatunji Tajudeen - Product Designer",
   description: "Crafting impactful user experiences and profitable solutions",
   url: "https://tunji-portfolio.vercel.app",
+  image: "#", // TODO: add favicon 260x260
 };
 
 export const PROJECTS = [
@@ -45,3 +46,18 @@ export const PROJECTS = [
 ];
 
 export type Project = (typeof PROJECTS)[number];
+
+export const EXPERIENCE = [
+  { organisation: "Palmview Technologies", role: "Product Designer", year: "2022-Present" },
+  { organisation: "Lemonwares Technologies", role: "Product Designer", year: "2024" },
+  { organisation: "Oriz", role: "Product Designer", year: "2023-2024" },
+  { organisation: "Codeboulevard Systems Ltd  ", role: "Product Designer", year: "2022-2023" },
+];
+
+export const TINKERING = [
+  { name: "Resend Development", url: "https://resend.webflow.io" },
+  { name: "Raft Development", url: "https://raft-8e2108.webflow.io" },
+  { name: "Magazine Development", url: "https://magazine-ui.webflow.io" },
+  { name: "Fumiwo Development", url: "https://fumiwo-baea09.webflow.io" },
+  { name: "Vaultflow Development", url: "https://vaultflow-fdde8f.webflow.io" },
+];

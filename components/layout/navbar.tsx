@@ -29,7 +29,7 @@ const Navbar = ({ isOpen, closeMenu }: Props) => {
         <ul className="list-none space-y-2">
           <li>
             <Link
-              href="#"
+              href="/about"
               onClick={closeMenu}
               className="inline-block w-full border-b border-b-white/30 px-2 pb-4 pt-5 text-[2rem] font-bold"
             >

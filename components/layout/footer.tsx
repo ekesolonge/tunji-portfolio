@@ -30,7 +30,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://read.cv/teejaay"
+                  href="https://drive.google.com/file/d/1VyyiKOUt9wGsE5M7T3uyDfny0loow7Bu/view?usp=sharing"
                   target="_blank"
                   className="transition-colors duration-300 ease-in sm:hover:!text-white sm:group-hover:text-[#333333]"
                 >

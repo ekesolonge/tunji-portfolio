@@ -42,7 +42,7 @@ const Navbar = ({ isOpen, closeMenu }: Props) => {
             </li>
             <li>
               <Link
-                href="https://read.cv/teejaay"
+                href="https://drive.google.com/file/d/1VyyiKOUt9wGsE5M7T3uyDfny0loow7Bu/view?usp=sharing"
                 target="_blank"
                 onClick={closeMenu}
                 className="inline-block w-full border-b border-b-white/30 px-2 pb-4 pt-5 text-[2rem] font-bold"

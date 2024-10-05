@@ -45,6 +45,30 @@ export const metadata: Metadata = {
     "User Interface",
     "User Experience",
   ],
+  icons: [
+    {
+      url: "/favicon-48x48.png",
+      type: "image/png",
+      sizes: "48x48",
+      rel: "icon",
+    },
+    {
+      url: "/favicon.svg",
+      type: "image/svg+xml",
+      rel: "icon",
+    },
+    {
+      url: "/favicon.ico",
+      rel: "shortcut icon",
+    },
+    {
+      url: "/apple-touch-icon.png",
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+    },
+  ],
+  appleWebApp: { title: siteConfig.name },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {

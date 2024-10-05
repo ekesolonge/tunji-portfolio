@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
 type Props = {
@@ -10,6 +11,8 @@ type Props = {
 };
 
 const MobileNavbar = ({ isOpen, closeMenu }: Props) => {
+  const pathname = usePathname();
+
   useEffect(() => {
     document.addEventListener("keydown", e => {
       if (e.key === "Escape") closeMenu();
@@ -38,7 +41,7 @@ const MobileNavbar = ({ isOpen, closeMenu }: Props) => {
             </li>
             <li>
               <Link
-                href="#projects"
+                href={pathname === "/" ? "#projects" : "/#projects"}
                 onClick={closeMenu}
                 className="inline-block w-full border-b border-b-white/30 px-2 pb-4 pt-5 text-[1.75rem] font-bold"
               >

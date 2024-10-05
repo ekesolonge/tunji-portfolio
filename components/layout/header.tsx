@@ -36,9 +36,9 @@ const Header = () => {
 
   return (
     <motion.header
-    className={cn("pt-7 md:pt-4 fixed w-full bg-white z-50 transition-all duration-400 ease-in", {
-      "bg-black text-white": isMobileOpen,
-    })}
+      className={cn("pt-7 md:pt-4 fixed w-full bg-white z-50 transition-colors duration-400 ease-in", {
+        "bg-black text-white": isMobileOpen,
+      })}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}
@@ -58,7 +58,7 @@ const Header = () => {
             </Button>
             <Button
               variant={isMobileOpen ? "ghost-inverted" : "ghost"}
-              className={cn("size-10 p-0 md:hidden transition-all duration-400 ease-in", { "text-white": isMobileOpen })}
+              className={cn("size-10 p-0 md:hidden transition-colors duration-400 ease-in", { "text-white": isMobileOpen })}
               onClick={() => setIsMobileOpen(prev => !prev)}
               aria-label="Open menu"
             >
@@ -66,21 +66,21 @@ const Header = () => {
             </Button>
           </div>
           <motion.div
-            className={cn("h-[0.1875rem] mx-auto bg-black transition-all duration-400 ease-in", isMobileOpen && "bg-white")}
+            className={cn("h-[0.1875rem] mx-auto bg-black transition-colors duration-400 ease-in", isMobileOpen && "bg-white")}
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: "100%", opacity: 1 }}
             transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}
             layout
           />
           <motion.div
-            className={cn("h-0.5 bg-white transition-all duration-400 ease-in", isMobileOpen && "bg-black")}
+            className={cn("h-0.5 bg-white transition-colors duration-400 ease-in", isMobileOpen && "bg-black")}
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: "100%", opacity: 1 }}
             transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}
             layout
           />
           <motion.div
-            className={cn("h-[0.1875rem] mx-auto bg-black transition-all duration-400 ease-in", isMobileOpen && "bg-white")}
+            className={cn("h-[0.1875rem] mx-auto bg-black transition-colors duration-400 ease-in", isMobileOpen && "bg-white")}
             initial={{ width: 0, opacity: 0 }}
             animate={{ width: "100%", opacity: 1 }}
             transition={{ type: "tween", duration: 0.4, ease: "easeIn" }}

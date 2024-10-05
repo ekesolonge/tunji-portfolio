@@ -12,7 +12,7 @@ const Footer = () => {
             Let us discuss your big idea.{" "}
             <Link
               href="mailto:tajudeenismail61@gmail.com"
-              className="group inline-flex items-center gap-4 text-white/50 underline transition-all duration-300 ease-in hover:text-white md:no-underline"
+              className="group inline-flex items-center gap-4 text-white/50 underline transition-colors duration-300 ease-in hover:text-white md:no-underline"
             >
               Email me{" "}
               <RightArrowIcon className="relative -left-10 hidden text-transparent transition-all duration-300 ease-in group-hover:left-0 group-hover:text-white md:block" />

@@ -25,11 +25,13 @@ const Projects = () => {
           ))}
         </motion.div>
       </div>
-      <div className="grid gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-14">
+      <ul className="grid gap-y-12 md:grid-cols-2 md:gap-x-8 md:gap-y-14">
         {PROJECTS.map((project, index) => (
-          <ProjectCard key={index} project={project} />
+          <li key={index}>
+            <ProjectCard project={project} />
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 };

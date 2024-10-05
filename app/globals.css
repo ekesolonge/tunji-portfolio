@@ -71,3 +71,35 @@
     @apply bg-background text-foreground grid size-full grid-rows-[1fr_auto] font-cabinet-grotesk font-medium *:min-w-0;
   }
 }
+
+._blukard {
+  aspect-ratio: 343/260;
+  background-color: #fbfbfb;
+  @media (min-width: 48rem /* 768px */) {
+    aspect-ratio: 1200/908;
+  }
+}
+
+._aff-flagit {
+  aspect-ratio: 343/219;
+  background-color: #fafafa;
+  @media (min-width: 48rem /* 768px */) {
+    aspect-ratio: 1200/768;
+  }
+}
+
+._padshare {
+  aspect-ratio: 343/153;
+  background-color: #fafafa;
+  @media (min-width: 48rem /* 768px */) {
+    aspect-ratio: 1200/535;
+  }
+}
+
+._4pay {
+  aspect-ratio: 343/370;
+  background-color: #e5f2ff;
+  @media (min-width: 48rem /* 768px */) {
+    aspect-ratio: 1200/700;
+  }
+}

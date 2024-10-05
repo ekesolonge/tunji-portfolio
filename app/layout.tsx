@@ -14,7 +14,7 @@ const cabinetGrotesk = localFont({
 });
 
 export const metadata: Metadata = {
-  title: siteConfig.title,
+  title: { default: siteConfig.title, template: `%s | ${siteConfig.title}` },
   description: siteConfig.description,
   metadataBase: new URL(siteConfig.url),
   openGraph: {

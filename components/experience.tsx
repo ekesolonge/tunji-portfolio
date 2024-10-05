@@ -6,11 +6,13 @@ const Experience = () => {
       <h2 className="text-2xl font-bold leading-normal tracking-[0.02em] text-[#121212] md:text-[3.5rem] md:font-medium md:leading-[4.75rem] md:tracking-normal">
         Experience
       </h2>
-      <div>
+      <ul>
         {EXPERIENCE.map(experience => (
-          <ExperienceItem key={experience.organisation} experience={experience} />
+          <li key={experience.organisation}>
+            <ExperienceItem experience={experience} />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

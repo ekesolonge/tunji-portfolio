@@ -9,11 +9,13 @@ const Tinkering = () => {
       <h2 className="text-2xl font-bold leading-normal tracking-[0.02em] text-[#121212] md:text-[3.5rem] md:font-medium md:leading-[4.75rem] md:tracking-normal">
         Webflow tinkering
       </h2>
-      <div>
+      <ul>
         {TINKERING.map(tinkering => (
-          <TinkeringItem key={tinkering.name} tinkering={tinkering} />
+          <li key={tinkering.name}>
+            <TinkeringItem tinkering={tinkering} />
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

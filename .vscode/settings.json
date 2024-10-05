@@ -1,4 +1,19 @@
 {
-  "cSpell.words": ["Behance", "grotesk", "Olatunji", "Tajudeen", "tunji"],
+  "cSpell.words": [
+    "Behance",
+    "blukard",
+    "Codeboulevard",
+    "flagit",
+    "Fumiwo",
+    "grotesk",
+    "Lemonwares",
+    "Olatunji",
+    "Oriz",
+    "padshare",
+    "Palmview",
+    "Tajudeen",
+    "tunji",
+    "Vaultflow"
+  ],
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }

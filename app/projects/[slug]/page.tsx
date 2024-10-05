@@ -92,19 +92,39 @@ export default function ProjectPage({ params: { slug } }: Props) {
           <ImageBlock
             src={project.full.banner}
             alt={project.full.bannerAlt}
-            objectFit="object-cover"
             priority
-            className="aspect-[343/335] md:aspect-[1200/589]"
+            objectFit="object-cover"
+            className={`aspect-[343/335] md:aspect-[1200/589] ${project.full.mobileBanner ? "hidden md:block" : ""}`}
           />
+          {project.full.mobileBanner && (
+            <ImageBlock
+              src={project.full.mobileBanner}
+              alt={project.full.mobileBannerAlt}
+              objectFit="object-cover"
+              priority
+              className="aspect-[343/335] md:hidden"
+            />
+          )}
         </div>
         {project.full.overview && <TextBlock title="Overview" content={project.full.overview} />}
+        {project.full.problemStatementBefore && (
+          <TextBlock title="Problem statement" content={project.full.problemStatementBefore} />
+        )}
         <ImageBlock
           src={project.full.banner1}
           alt={project.full.banner1Alt}
-          className="aspect-[343/335] md:aspect-[1200/589]"
           objectFit="object-cover"
+          className={`aspect-[343/335] md:aspect-[1200/589] ${project.full.mobileBanner1 ? "hidden md:block" : ""}`}
         />
-        <TextBlock title="Problem statement" content={project.full.problemStatement} />
+        {project.full.mobileBanner1 && (
+          <ImageBlock
+            src={project.full.mobileBanner1}
+            alt={project.full.mobileBanner1Alt}
+            objectFit="object-cover"
+            className="aspect-[343/335] md:hidden"
+          />
+        )}
+        {project.full.problemStatement && <TextBlock title="Problem statement" content={project.full.problemStatement} />}
         <TextBlock title="Research findings" content={project.full.researchFindings} />
         {project.full.notes && (
           <ImageBlock
@@ -169,6 +189,7 @@ export default function ProjectPage({ params: { slug } }: Props) {
             src={screen.image}
             alt={screen.alt}
             objectFit={screen.cover ? "object-cover" : "object-contain"}
+            data-slug={project.slug}
             className={`_${project.slug}`}
           />
         ))}

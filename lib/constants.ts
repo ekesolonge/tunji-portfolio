@@ -2,8 +2,7 @@ export const siteConfig = {
   name: "Olatunji Tajudeen",
   title: "Olatunji Tajudeen - Product Designer",
   description: "Crafting impactful user experiences and profitable solutions",
-  url: "https://tunji-portfolio.vercel.app",
-  image: "#", // TODO: add favicon 260x260
+  url: "https://olatunjitaj.com",
 };
 
 export const PROJECTS = [
@@ -20,7 +19,7 @@ export const PROJECTS = [
       banner1: "/images/projects/blukard/banner-1.png",
       banner1Alt: "Blukard app broadcasting and home screen",
       overview:
-        "Blukard is an innovative digital platform aimed at ditigitizing the traditional paper business card experience by transforming it into a dynamic digital asset. This app is designed to boost networking opportunities and improve business visibility for both individual professionals and businesses.",
+        "Blukard is an innovative digital platform aimed at digitizing the traditional paper business card experience by transforming it into a dynamic digital asset. This app is designed to boost networking opportunities and improve business visibility for both individual professionals and businesses.",
       problemStatement:
         "In a rapidly digitalizing world, traditional paper business cards are increasingly seen as outdated. They often get lost, are environmentally unfriendly, and fail to keep up with the dynamic nature of today’s professional connections. There’s also the challenge of enhancing visibility in competitive markets. Many professionals and small businesses struggle to find platforms that both increase their networking reach and give them space to showcase their services.",
       researchFindings: `<p>I researched with 20 participants in the corporate and entrepreneur category. Findings revealed that;<p/>
@@ -94,7 +93,7 @@ export const PROJECTS = [
         },
       ],
       reflection:
-        "One of the challenges I faced was the case of transitioning users business identity, which was built around their paper cards, to digital ones. There were several issues, especially with users who had more complex card designs. To address this, I teamed up with the Development lead. We focused on what was most important to the users, allowing us to meet the product deadlines while continuing to work on the best long-term solution.\n\nAs Blukard grows in the market, i’l continue to focus on iterative improvements based on user needs to drive growth.",
+        "One of the challenges I faced was the case of transitioning users business identity, which was built around their paper cards, to digital ones. There were several issues, especially with users who had more complex card designs. To address this, I teamed up with the Development lead. We focused on what was most important to the users, allowing us to meet the product deadlines while continuing to work on the best long-term solution.\n\nAs Blukard grows in the market, I’ll continue to focus on iterative improvements based on user needs to drive growth.",
     },
   },
   {
@@ -112,7 +111,7 @@ export const PROJECTS = [
       overview:
         "AFF FLAGIT is a transformative app aimed at improving the reporting and response mechanisms of government parastatals on critical societal issues such as bribery, domestic abuse, extortion, and other forms of misconduct in Nigeria. The app empowers citizens to report these issues efficiently while ensuring that their reports reach the appropriate authorities.",
       problemStatement:
-        "In Nigeria, issues like bribery, domestic violence, and extortion are pervasive, yet reporting such abuses often remains a challenging task for citizens. Existing reporting channels can be inefficient, unresponsive, and sometimes dangerous, leading to underreporting of incidents. Citizens often lack confidence that their reports will be addressed adequately or that the right authorities will take necessary actions. There’s a clear need for a platform that not only simplifies the reporting process but also provides a secure and anonymous way for users to gather and share evidence of abuse and misconduct.",
+        "In Nigeria, issues like bribery, domestic violence, and extortion are pervasive, yet reporting such abuses often remains a challenging task for citizens. Existing reporting channels can be inefficient, unresponsive, and sometimes dangerous, leading to under-reporting of incidents. Citizens often lack confidence that their reports will be addressed adequately or that the right authorities will take necessary actions. There’s a clear need for a platform that not only simplifies the reporting process but also provides a secure and anonymous way for users to gather and share evidence of abuse and misconduct.",
       researchFindings: `<p>Given the nature of the project, I needed to gather information from individuals who are either in the academic and public environment who could give information on incidents around their vicinity. Research interview done with 15 participants revealed concerns about;<p/>
     <ol>
       <li>Safety,</li>
@@ -213,7 +212,12 @@ export const PROJECTS = [
       bannerAlt: "4pay app welcome screen",
       banner1: "/images/projects/4pay/banner-1.png",
       banner1Alt: "4pay app home screen and successful payment screen",
-      problemStatement:
+      mobileBanner: "/images/projects/4pay/mobile-banner.png",
+      mobileBannerAlt: "4pay app welcome screen",
+      mobileBanner1: "/images/projects/4pay/mobile-banner-1.png",
+      mobileBanner1Alt: "4pay app home screen and successful payment screen",
+      contain: true,
+      problemStatementBefore:
         "Sending money between African banks requires converting to USD, which increases reliance on foreign currency. To solve this, the African Finance Cooperation and African Union introduced the Pan African Payment and Settlement System (PAPSS), a platform designed to make intra-African payments easier. The goal of this app is to allow users to send money across African countries seamlessly.",
       researchFindings:
         "In the first phase of the design process, we designed an online survey with Google Forms to observe patterns and similarities in the needs of potential users. A total of 40 people responded to the Survey. Given below is the google form prepared of the research.",

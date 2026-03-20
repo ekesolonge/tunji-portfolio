@@ -52,6 +52,10 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<Met
   };
 }
 
+export async function generateStaticParams() {
+  return PROJECTS.map(post => ({ slug: post.slug }));
+}
+
 export default function ProjectPage({ params: { slug } }: Props) {
   const project = getProject(slug);
   const nextProjects = getNextProjects(slug);
